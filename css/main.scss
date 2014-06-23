@@ -45,8 +45,15 @@ hr {
 	border: none;
 	border-top: 1px solid #333;
 }
+a {
+	color: black;
+
+	&:hover {
+		color: cornflowerblue;
+	}
+}
 footer {
-	@extend h3;
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	color: lavender;
 	margin-top: 20px;
@@ -58,6 +65,10 @@ footer {
 
 	a {
 		color: lavender;
+
+		&:hover {
+			color: cornflowerblue;
+		}
 	}
 }
 

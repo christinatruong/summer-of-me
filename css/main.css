@@ -26,7 +26,7 @@ h2 {
   font-size: 2.0rem;
   margin: 0px; }
 
-h3, footer {
+h3 {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-size: 1.6rem; }
@@ -42,7 +42,13 @@ hr {
   border: none;
   border-top: 1px solid #333; }
 
+a {
+  color: black; }
+  a:hover {
+    color: cornflowerblue; }
+
 footer {
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   color: lavender;
   margin-top: 20px;
@@ -53,3 +59,5 @@ footer {
   border-radius: 5px; }
   footer a {
     color: lavender; }
+    footer a:hover {
+      color: cornflowerblue; }
