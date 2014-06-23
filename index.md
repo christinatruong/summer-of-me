@@ -22,4 +22,3 @@ With Jekyll, I can now create templates and includes without using PHP and I can
 Easy to follow instuctions here: [Get Started with GitHub Pages (Plus Bonus Jekyll)](http://24ways.org/2013/get-started-with-github-pages/)
 
 
-
