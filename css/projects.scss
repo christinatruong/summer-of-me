@@ -1,0 +1,17 @@
+//--------------------
+// Day 3: CSS Filters
+//--------------------
+.day-3 {
+	.grayscale { 
+		-webkit-filter: grayscale(100%); 
+	}
+	.sepia { 
+		-webkit-filter: sepia(100%); 
+	}
+	.saturate { 
+		-webkit-filter: saturate(200%); 
+	}
+	.reset {
+		-webkit-filter: none;
+	}
+}

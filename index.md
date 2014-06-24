@@ -21,4 +21,10 @@ With Jekyll, I can now create templates and includes without using PHP and I can
 
 Easy to follow instuctions here: [Get Started with GitHub Pages (Plus Bonus Jekyll)](http://24ways.org/2013/get-started-with-github-pages/)
 
+---
+###Day 3 - June 23, 2014
+Tried out some CSS filters and made an "Instagram" like thingy.  I think I'll continue with this tommorrow!
+
+[See project](day-3/) &rarr;
+
 
