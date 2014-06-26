@@ -12,5 +12,6 @@
 
 name: Summer of Me
 markdown: redcarpet
-pygments: true
+#pygments: true
+highligher: pygments
 baseurl: /summer-of-me

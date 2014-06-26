@@ -1,0 +1,15 @@
+{% include header.html %}
+
+    <main>
+    	<article class="post-content">
+            <h3>{{ page.title }} - {{ page.date | date: "%b %-d, %Y" }}</h3>
+
+    		{{ content }}
+    	</article>
+
+        <!-- <a href="{{ post.previous }}">Prev</a> || <a href="/summer-of-me/">Home</a> || <a href="{{ post.next }}">Next</a>  -->
+
+        <a href="/summer-of-me/">Home</a>
+    </main>
+
+{% include footer.html %}
