@@ -1,3 +1,6 @@
+.day-3 img {
+  max-width: 100%;
+  height: auto; }
 .day-3 .grayscale {
   -webkit-filter: grayscale(100%); }
 .day-3 .sepia {

@@ -2,6 +2,10 @@
 // Day 3: CSS Filters
 //--------------------
 .day-3 {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 	.grayscale {
 		-webkit-filter: grayscale(100%);
 	}

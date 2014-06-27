@@ -55,6 +55,11 @@ main {
 section {
 	border-bottom: 1px solid #333;
 	padding: 25px 0;
+	overflow: hidden;
+
+	&:last-of-type {
+		border: none;
+	}
 }
 hr {
 	border: none;
@@ -67,6 +72,10 @@ a {
 		color: cornflowerblue;
 	}
 }
+.more {
+	float: right;
+}
+
 footer {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;

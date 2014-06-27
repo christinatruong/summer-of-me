@@ -1,14 +1,15 @@
 ---
 layout: default
+title: Summer of Me - 3 months. 30 minutes. Every day.
 ---
 
 {% for post in site.posts %}
 <section>
-    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} Project</a></h3>
+    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 
     {{ post.excerpt }}
 
-    <a href="{{ site.baseurl }}{{ post.url }}">Read more</a> &rarr;
+    <span class="more"><a href="{{ site.baseurl }}{{ post.url }}">Read more</a> &rarr;</span>
 </section>
 
 {% endfor %}
