@@ -1,4 +1,9 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300|Vollkorn");
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 html {
   font-size: 62.5%; }
 
@@ -29,7 +34,10 @@ h2 {
 h3 {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  margin-top: 0; }
+  h3 a {
+    text-decoration: none; }
 
 main {
   max-width: 800px;
@@ -37,6 +45,10 @@ main {
   background: rgba(230, 230, 250, 0.8);
   padding: 20px 30px;
   border-radius: 5px; }
+
+section {
+  border-bottom: 1px solid #333;
+  padding: 25px 0; }
 
 hr {
   border: none;

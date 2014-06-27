@@ -2,16 +2,164 @@
 // Day 3: CSS Filters
 //--------------------
 .day-3 {
-	.grayscale { 
-		-webkit-filter: grayscale(100%); 
+	.grayscale {
+		-webkit-filter: grayscale(100%);
 	}
-	.sepia { 
-		-webkit-filter: sepia(100%); 
+	.sepia {
+		-webkit-filter: sepia(100%);
 	}
-	.saturate { 
-		-webkit-filter: saturate(200%); 
+	.saturate {
+		-webkit-filter: saturate(200%);
 	}
 	.reset {
 		-webkit-filter: none;
 	}
 }
+
+
+
+//--------------------
+// Day 6: CSS shapes
+//--------------------
+$skintone: #a87a58;
+@mixin size($width, $height){
+	width: $width;
+	height: $height;
+}
+
+.day-6 {
+	//background: url(../img/jay.jpg) no-repeat;
+	height: 200px;
+	position: relative;
+
+	* {
+		position: absolute;
+	}
+	.ear {
+		background: $skintone;
+		height: 25px;
+		width: 24px;
+		border-radius: 47%;
+		top: 111px;
+
+		&.left {
+			left: 113px;
+		}
+		&.right {
+			left: 231px;
+		}
+	}
+	.face {
+		height: 158px;
+		width: 99px;
+		background: $skintone;
+		//background: rgba($skintone, 0.8);
+		border-top-left-radius: 46%;
+		border-top-right-radius: 46%;
+		border-bottom-left-radius: 33%;
+		border-bottom-right-radius: 33%;
+		-webkit-transform: perspective(180px) rotateX(25deg);
+		top: 12px;
+		left: 134px;
+		//-webkit-border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+	}
+	.features {
+		height: 158px;
+		width: 99px;
+		// /border: 1px solid black;
+		top: 30px;
+		left: 134px;
+
+		.brows {
+			&:after{
+				content: "";
+				position: absolute;
+				border-top: 3px solid black;
+				border-left: 3px solid black;
+				border-top-left-radius: 100%;
+			}
+			&.left {
+				top: 45px;
+				left: 14px;
+				-webkit-transform: rotate(18deg);
+
+				&:after {
+					width: 24px;
+					height: 21px;
+				}
+			}
+			&.right {
+				top: 44px;
+				right: 18px;
+				-webkit-transform: rotate(70deg);
+
+				&:after {
+					width: 20px;
+					height: 24px;
+				}
+			}
+		}
+
+		.eyes {
+			background: black;
+			@include size(10px, 10px);
+			border-radius: 50%;
+			top: 45%;
+
+			&.left {
+				left: 21%;
+			}
+			&.right {
+				left: 73%;
+			}
+		}
+
+		.nose {
+			display:block;
+			width: 26px;
+			height: 80px;
+			border: 3px solid black;
+			border-top: none;
+			-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+			border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+		}
+	}
+
+	.neck {
+		//background: rgba($skintone, 0.8);
+		background: $skintone;
+		height: 40px;
+		width: 72px;
+		top: 173px;
+		left: 147px;
+		border-bottom-left-radius: 40%;
+		border-bottom-right-radius: 40%;
+		-webkit-transform: perspective(200px) rotateX(-12deg);
+	}
+}
+
+
+@mixin triangle($left-right, $top) {
+	width: 0;
+	height: 0;
+	border-left: $left-right solid transparent;
+	border-right: $left-right solid transparent;
+	border-top: $top solid #9d6856;
+}
+
+/*.day-6 {
+	position: relative;
+
+	.cone {
+		@include triangle(50px, 150px);
+	}
+	.waffle {
+		border-top: 1px solid black;
+		width: 100px;
+		height: 100%;
+		-webkit-transform:rotate(-75deg);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}*/
