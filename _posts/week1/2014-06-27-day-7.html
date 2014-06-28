@@ -1,0 +1,52 @@
+---
+layout: post
+date:   2014-06-27
+title: Day 7 - three.js
+published: true
+---
+<p>I been tinkering with my <a href="{{ site.baseurl }}/2014/06/26/day-6.html">CSS shapes project from yesterday</a> and it's going to take a little bit longer so I didn't want to post any updates just yet. So I decided last minute to do something else for today.  I don't know why I thought trying out <a href="http://threejs.org/" target="_blank">three.js</a> for the first time was going to be faster but here I am, 12:45am, and finally posting today's experiment.  Part of the time spent on this was to also get it to post properly within this page! Oh well, I started before midnight so it still counts in my book.</p>
+
+<div class="day-7">
+
+	<div id="canvas"></div>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js"></script>
+	<script>
+
+		var container = document.getElementById( 'canvas' );
+		//document.body.appendChild( container );
+		// renderer = new THREE.WebGLRenderer(); -ok
+		// renderer.setSize( 200, 200 );
+		// container.appendChild( renderer.domElement );
+
+
+		var scene = new THREE.Scene();
+		var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+		camera.position.z = 2;
+
+		var renderer = new THREE.WebGLRenderer();
+		//renderer.setSize(window.innerWidth, window.innerHeight);
+		renderer.setSize( 400, 200 );
+		//document.body.appendChild(renderer.domElement);
+		container.appendChild( renderer.domElement );
+
+		var geometry = new THREE.CubeGeometry(2,2,2);
+		var material = new THREE.MeshNormalMaterial( { 
+			color: 0xff0000, 
+			wireframe: true 
+		} );
+		var cube = new THREE.Mesh(geometry, material);
+		scene.add(cube);
+		
+		var render = function () {
+			requestAnimationFrame(render);
+
+			cube.rotation.x += 0.01;
+			cube.rotation.y += 0.01;
+
+			renderer.render(scene, camera);
+		};
+		render();
+	</script>
+</div>
+
+<p>Good night!</p>
