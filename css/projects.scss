@@ -150,20 +150,3 @@ $skintone: #a87a58;
 	border-right: $left-right solid transparent;
 	border-top: $top solid #9d6856;
 }
-
-/*.day-6 {
-	position: relative;
-
-	.cone {
-		@include triangle(50px, 150px);
-	}
-	.waffle {
-		border-top: 1px solid black;
-		width: 100px;
-		height: 100%;
-		-webkit-transform:rotate(-75deg);
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-}*/

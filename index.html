@@ -4,12 +4,12 @@ title: Summer of Me - 3 months. 30 minutes. Every day.
 ---
 
 {% for post in site.posts %}
-<section>
-    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+    <section class="grid-cell">
+        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 
-    {{ post.excerpt }}
+        {{ post.excerpt }}
 
-    <span class="more"><a href="{{ site.baseurl }}{{ post.url }}">Read more</a> &rarr;</span>
-</section>
+        <span class="more"><a href="{{ site.baseurl }}{{ post.url }}">Read more</a> &rarr;</span>
+    </section>
 
 {% endfor %}

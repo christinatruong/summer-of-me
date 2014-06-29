@@ -88,20 +88,3 @@
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
     -webkit-transform: perspective(200px) rotateX(-12deg); }
-
-/*.day-6 {
-	position: relative;
-
-	.cone {
-		@include triangle(50px, 150px);
-	}
-	.waffle {
-		border-top: 1px solid black;
-		width: 100px;
-		height: 100%;
-		-webkit-transform:rotate(-75deg);
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-}*/
