@@ -22,13 +22,18 @@
 
 
 
-//--------------------
-// Day 6: CSS shapes
-//--------------------
+//-----------------------
+// Day 6 & 7: CSS shapes
+//-----------------------
 $skintone: #a87a58;
+//$skintone: rgba(#a87a58, 0.6);
+
 @mixin size($width, $height){
 	width: $width;
 	height: $height;
+}
+@mixin egg($top, $bottom) {
+	border-radius: $top $top $bottom $bottom;
 }
 
 .day-6 {
@@ -141,6 +146,7 @@ $skintone: #a87a58;
 		-webkit-transform: perspective(200px) rotateX(-12deg);
 	}
 }
+
 
 
 @mixin triangle($left-right, $top) {

@@ -1,0 +1,272 @@
+$skintone: #a87a58;
+//$skintone: rgba(#a87a58, 0.5);
+$black: #1d1d1d;
+//$black: rgba(#1d1d1d, 0.5);
+$lips: #b8816d;
+//$lips: rgba(#b8816d, 0.5);
+
+@mixin size($width, $height){
+	width: $width;
+	height: $height;
+}
+@mixin egg($top, $bottom) {
+	border-radius: $top $top $bottom $bottom;
+}
+@mixin triangle($left-right, $top, $color) {
+	width: 0;
+	height: 0;
+	border-left: $left-right solid transparent;
+	border-right: $left-right solid transparent;
+	border-top: $top solid $color;
+}
+@mixin triangle-top($left-right, $top, $color) {
+	width: 0;
+	height: 0;
+	border-left: $left-right solid transparent;
+	border-right: $left-right solid transparent;
+	border-bottom: $top solid $color;
+}
+
+.day9 {
+	//background: url(../img/jay.jpg) no-repeat;
+	// height: 700px;
+	// position: relative;
+	overflow: hidden;
+
+	.wrap {
+		width: 345px;
+		height: 700px;
+		position: relative;
+		float: left;
+
+		* {
+			position: absolute;
+		}
+	}
+	.ear {
+		background: $skintone;
+		height: 25px;
+		width: 24px;
+		border-radius: 47%;
+		top: 111px;
+
+		&.left {
+			left: 113px;
+		}
+		&.right {
+			left: 231px;
+		}
+	}
+	.face {
+		height: 168px;
+		width: 97px;
+		background: $skintone;
+		border-radius: 46% 46% 33% 33%;
+		-webkit-transform: perspective(180px) rotateX(36deg);
+		top: 1px;
+		left: 135px;
+	}
+	.hair-wrap {
+		height: 46px;
+		overflow: hidden;
+		top: 12px;
+		left: 134px;
+		width: 99px;
+	}
+	.hair {
+		background: $black;
+		height: 158px;
+		width: 99px;
+		@include egg(46%, 33%);
+		-webkit-transform: perspective(180px) rotateX(25deg);
+	}
+	.sideburns-wrap {
+		left: 129px;
+		top: 11px;
+		height: 113px;
+		width: 110px;
+		overflow: hidden;
+		padding-left: 5px;
+
+		.lower {
+			width: 87%;
+			background: #a87a58;
+			height: 36px;
+			top: 83px;
+			left: 7px;
+			border-radius: 1px;
+		}
+	}
+	.sideburns {
+		border: 5px solid $black;
+		height: 158px;
+		width: 99px;
+		@include egg(46%, 33%);
+		-webkit-transform: perspective(180px) rotateX(25deg);
+	}
+	.forehead {
+		background: #a87a58;
+		height: 8px;
+		width: 80%;
+		top: 30px;
+		left: 10px;
+		border-radius: 2px;
+	}
+	.features {
+		height: 158px;
+		width: 99px;
+		top: 30px;
+		left: 134px;
+
+		.brows {
+			&:after{
+				content: "";
+				position: absolute;
+				border-top: 3px solid $black;
+				border-left: 3px solid $black;
+				border-top-left-radius: 100%;
+			}
+			&.left {
+				top: 45px;
+				left: 14px;
+				-webkit-transform: rotate(18deg);
+
+				&:after {
+					width: 24px;
+					height: 21px;
+				}
+			}
+			&.right {
+				top: 44px;
+				right: 18px;
+				-webkit-transform: rotate(70deg);
+
+				&:after {
+					width: 20px;
+					height: 24px;
+				}
+			}
+		}
+		.eyes {
+			background: $black;
+			@include size(10px, 10px);
+			border-radius: 50%;
+			top: 45%;
+
+			&.left {
+				left: 21%;
+			}
+			&.right {
+				left: 73%;
+			}
+		}
+		.nose {
+			border: 2px solid $black;
+			border-top: none;
+			@include size(24px, 25px);
+			@include egg(0, 40%);
+			top: 70px;
+			left: 38px;
+			-webkit-transform: perspective(25px) rotateX(41deg);
+		}
+		.laughline {
+			border: 1px solid $black;
+			height: 26px;
+			top: 96px;
+
+			&.left {
+				-webkit-transform: rotate(23deg);
+				left: 29px;
+			}
+			&.right {
+				-webkit-transform: rotate(-23deg);
+				left: 68px;
+			}
+		}
+		.upperlip {
+			background: $lips;
+			border: 2px solid $black;
+			width: 31px;
+			height: 23px;
+			bottom: 24px;
+			left: 35px;
+			border-radius: 53%;
+		}
+		.lowerlip {
+			background: $lips;
+			border: 2px solid $black;
+			width: 32px;
+			height: 21px;
+			bottom: 20px;
+			left: 34px;
+			border-radius: 86%;
+		}
+		.lowerlip2 {
+			background: $lips;
+			border: 2px solid $black;
+			width: 32px;
+			height: 35px;
+			bottom: 20px;
+			left: 34px;
+			border-top: 0;
+			@include egg(0, 100%);
+		}
+		.chin {
+			width: 11px;
+			height: 9px;
+			border-radius: 50%;
+			border: 2px solid $black;
+			bottom: 9px;
+			left: 44px;
+		}
+	}
+	.neck {
+		background: $skintone;
+		height: 36px;
+		width: 72px;
+		top: 173px;
+		left: 147px;
+		border-bottom-left-radius: 25%;
+		border-bottom-right-radius: 25%;
+	}
+	.tee {
+		background: white;
+		height: 40px;
+		width: 70px;
+		top: 195px;
+		left: 148px;
+		border-bottom-left-radius: 35%;
+		border-bottom-right-radius: 35%;
+		-webkit-transform: perspective(200px) rotateX(-12deg);
+	}
+	.collar {
+		width: 0;
+		height: 0;
+		border-left: 44px solid transparent;
+		border-right: 0;
+		border-bottom: 60px solid $black;
+		border-top-left-radius: 25%;
+		top: 175px;
+
+		&.left {
+			left: 103px;
+		}
+		&.right {
+			left: 219px;
+			-webkit-transform: scaleX(-1);
+		}
+	}
+
+	.writeup {
+		top: 260px;
+		width: 100%;
+
+		* {
+			position: static;
+		}
+	}
+	.source {
+		float: right;
+		text-align: center;
+	}
+}

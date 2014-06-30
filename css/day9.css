@@ -1,0 +1,190 @@
+.day9 {
+  overflow: hidden; }
+  .day9 .wrap {
+    width: 345px;
+    height: 700px;
+    position: relative;
+    float: left; }
+    .day9 .wrap * {
+      position: absolute; }
+  .day9 .ear {
+    background: #a87a58;
+    height: 25px;
+    width: 24px;
+    border-radius: 47%;
+    top: 111px; }
+    .day9 .ear.left {
+      left: 113px; }
+    .day9 .ear.right {
+      left: 231px; }
+  .day9 .face {
+    height: 168px;
+    width: 97px;
+    background: #a87a58;
+    border-radius: 46% 46% 33% 33%;
+    -webkit-transform: perspective(180px) rotateX(36deg);
+    top: 1px;
+    left: 135px; }
+  .day9 .hair-wrap {
+    height: 46px;
+    overflow: hidden;
+    top: 12px;
+    left: 134px;
+    width: 99px; }
+  .day9 .hair {
+    background: #1d1d1d;
+    height: 158px;
+    width: 99px;
+    border-radius: 46% 46% 33% 33%;
+    -webkit-transform: perspective(180px) rotateX(25deg); }
+  .day9 .sideburns-wrap {
+    left: 129px;
+    top: 11px;
+    height: 113px;
+    width: 110px;
+    overflow: hidden;
+    padding-left: 5px; }
+    .day9 .sideburns-wrap .lower {
+      width: 87%;
+      background: #a87a58;
+      height: 36px;
+      top: 83px;
+      left: 7px;
+      border-radius: 1px; }
+  .day9 .sideburns {
+    border: 5px solid #1d1d1d;
+    height: 158px;
+    width: 99px;
+    border-radius: 46% 46% 33% 33%;
+    -webkit-transform: perspective(180px) rotateX(25deg); }
+  .day9 .forehead {
+    background: #a87a58;
+    height: 8px;
+    width: 80%;
+    top: 30px;
+    left: 10px;
+    border-radius: 2px; }
+  .day9 .features {
+    height: 158px;
+    width: 99px;
+    top: 30px;
+    left: 134px; }
+    .day9 .features .brows:after {
+      content: "";
+      position: absolute;
+      border-top: 3px solid #1d1d1d;
+      border-left: 3px solid #1d1d1d;
+      border-top-left-radius: 100%; }
+    .day9 .features .brows.left {
+      top: 45px;
+      left: 14px;
+      -webkit-transform: rotate(18deg); }
+      .day9 .features .brows.left:after {
+        width: 24px;
+        height: 21px; }
+    .day9 .features .brows.right {
+      top: 44px;
+      right: 18px;
+      -webkit-transform: rotate(70deg); }
+      .day9 .features .brows.right:after {
+        width: 20px;
+        height: 24px; }
+    .day9 .features .eyes {
+      background: #1d1d1d;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      top: 45%; }
+      .day9 .features .eyes.left {
+        left: 21%; }
+      .day9 .features .eyes.right {
+        left: 73%; }
+    .day9 .features .nose {
+      border: 2px solid #1d1d1d;
+      border-top: none;
+      width: 24px;
+      height: 25px;
+      border-radius: 0 0 40% 40%;
+      top: 70px;
+      left: 38px;
+      -webkit-transform: perspective(25px) rotateX(41deg); }
+    .day9 .features .laughline {
+      border: 1px solid #1d1d1d;
+      height: 26px;
+      top: 96px; }
+      .day9 .features .laughline.left {
+        -webkit-transform: rotate(23deg);
+        left: 29px; }
+      .day9 .features .laughline.right {
+        -webkit-transform: rotate(-23deg);
+        left: 68px; }
+    .day9 .features .upperlip {
+      background: #b8816d;
+      border: 2px solid #1d1d1d;
+      width: 31px;
+      height: 23px;
+      bottom: 24px;
+      left: 35px;
+      border-radius: 53%; }
+    .day9 .features .lowerlip {
+      background: #b8816d;
+      border: 2px solid #1d1d1d;
+      width: 32px;
+      height: 21px;
+      bottom: 20px;
+      left: 34px;
+      border-radius: 86%; }
+    .day9 .features .lowerlip2 {
+      background: #b8816d;
+      border: 2px solid #1d1d1d;
+      width: 32px;
+      height: 35px;
+      bottom: 20px;
+      left: 34px;
+      border-top: 0;
+      border-radius: 0 0 100% 100%; }
+    .day9 .features .chin {
+      width: 11px;
+      height: 9px;
+      border-radius: 50%;
+      border: 2px solid #1d1d1d;
+      bottom: 9px;
+      left: 44px; }
+  .day9 .neck {
+    background: #a87a58;
+    height: 36px;
+    width: 72px;
+    top: 173px;
+    left: 147px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%; }
+  .day9 .tee {
+    background: white;
+    height: 40px;
+    width: 70px;
+    top: 195px;
+    left: 148px;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    -webkit-transform: perspective(200px) rotateX(-12deg); }
+  .day9 .collar {
+    width: 0;
+    height: 0;
+    border-left: 44px solid transparent;
+    border-right: 0;
+    border-bottom: 60px solid #1d1d1d;
+    border-top-left-radius: 25%;
+    top: 175px; }
+    .day9 .collar.left {
+      left: 103px; }
+    .day9 .collar.right {
+      left: 219px;
+      -webkit-transform: scaleX(-1); }
+  .day9 .writeup {
+    top: 260px;
+    width: 100%; }
+    .day9 .writeup * {
+      position: static; }
+  .day9 .source {
+    float: right;
+    text-align: center; }
