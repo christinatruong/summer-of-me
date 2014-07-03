@@ -156,3 +156,14 @@ $skintone: #a87a58;
 	border-right: $left-right solid transparent;
 	border-top: $top solid #9d6856;
 }
+
+
+.day-12 {
+	float: left;
+	margin-right: 15px;
+	width: 50%;
+
+	.grid-cell & {
+		width: 100%;
+	}
+}

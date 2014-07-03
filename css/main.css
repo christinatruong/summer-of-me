@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
-  background: url(../img/DSC_0073-web.jpg) no-repeat;
+  background: url(../img/DSC_0073-web.jpg) no-repeat fixed;
   background-size: cover;
   font-family: 'Vollkorn', serif; }
 
@@ -76,6 +76,11 @@ main {
   .grid-cell:nth-child(3n+2) {
     margin-right: 2%;
     margin-left: 2%; }
+  .grid-cell img {
+    max-width: 100%; }
+
+.post-content img {
+  max-width: 100%; }
 
 .more {
   position: absolute;

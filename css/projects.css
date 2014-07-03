@@ -88,3 +88,10 @@
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
     -webkit-transform: perspective(200px) rotateX(-12deg); }
+
+.day-12 {
+  float: left;
+  margin-right: 15px;
+  width: 50%; }
+  .grid-cell .day-12 {
+    width: 100%; }
