@@ -56,7 +56,10 @@ a {
 }
 main {
 	margin: 0 auto;
-
+	width: 90%;
+}
+p {
+	font-size: 14px;
 }
 .posts {
 	max-width: 800px;
@@ -74,16 +77,17 @@ main {
     flex-flow: row wrap;
 }
 .grid-cell {
-	width: 32%;
+	width: 24.25%;
 	background: rgba(lavender, 0.8);
 	margin-bottom: 20px;
 	border-radius: 5px;
 	position: relative;
-	padding: 25px 25px 40px;
+	padding: 15px 20px 40px;
+	line-height: 1.25;
+	margin-right: 1%;
 
-	&:nth-child(3n+2) {
-		margin-right: 2%;
-		margin-left: 2%;
+	&:nth-child(4n+4) {
+		margin-right: 0;
 	}
 	img {
 		max-width: 100%;
@@ -102,11 +106,13 @@ main {
 
 pre {
 	background: #222;
+	padding: 20px;
 
 	code {
 		display: block;
-		padding: 20px;
+		
 		color: #ddd;
+		overflow: auto;
 	}
 }
 
@@ -120,6 +126,7 @@ footer {
 	margin: 20px auto;
 	padding: 10px 30px;
 	border-radius: 5px;
+	width: 90%;
 
 
 	a {
@@ -135,11 +142,19 @@ footer {
 	}
 }
 
-
-@media (max-width: 800px) {
-	main, footer {
-		width: 90%;
+@media (max-width: 1100px) {
+	.grid-cell {
+		width: 32.666666667%;
+		
+		&:nth-child(3n+3) {
+			margin-right: 0;
+		}
+		&:nth-child(4n+4) {
+			margin-right: 1%;
+		}
 	}
+}
+@media (max-width: 850px) {
 	main footer {
 		width: 100%;
 	}

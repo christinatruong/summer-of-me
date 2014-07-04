@@ -10,6 +10,9 @@
 .day-3 .reset {
   -webkit-filter: none; }
 
+.grid-cell .day-6 {
+  left: -25%; }
+
 .day-6 {
   height: 200px;
   position: relative; }

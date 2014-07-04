@@ -1,0 +1,30 @@
+---
+layout: post
+date:   2014-07-03
+title: Day 13 - Stuff
+published: true
+---
+
+<p>I wanted to do something with canvas but these boxes was pretty much as far as I got since I didn't have much time today and I think I'll need more than 30mins for this :(</p>
+
+<canvas id="canvas" width="150" height="100"></canvas>
+<script type="text/javascript">
+function draw() {
+  var canvas = document.getElementById("canvas");
+  if (canvas.getContext) {
+    var ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "rgb(200,0,0)";
+    ctx.fillRect (10, 10, 55, 50);
+
+    ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+    ctx.fillRect (30, 30, 55, 50);
+  }
+}
+
+draw();
+</script>
+
+<p>So instead, I rearranged the homepage again and fixed a few mobile bugs. Also, check out my <a href="/summer-of-me/2014/06/29/day-9.html">Day 9 project again (CSS Shapes/Illustrations)</a> if you want to see the individual shapes that I created to make the whole face.</p>
+<p>That's all I got! Good night!</p>
+

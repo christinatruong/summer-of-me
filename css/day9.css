@@ -2,11 +2,23 @@
   overflow: hidden; }
   .day9 .wrap {
     width: 345px;
-    height: 700px;
     position: relative;
     float: left; }
     .day9 .wrap * {
       position: absolute; }
+    .day9 .wrap h3 {
+      position: static;
+      text-align: center; }
+    .day9 .wrap.no-positioning {
+      width: 100%; }
+      .day9 .wrap.no-positioning * {
+        position: static; }
+      .day9 .wrap.no-positioning > div {
+        float: left; }
+      .day9 .wrap.no-positioning p {
+        margin-bottom: 60px; }
+      .day9 .wrap.no-positioning .face {
+        margin: -50px 15px 10px 10px; }
   .day9 .ear {
     background: #a87a58;
     height: 25px;
