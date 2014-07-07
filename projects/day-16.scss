@@ -1,0 +1,317 @@
+// VARIABLES
+$burgundy: rgba(182, 15, 97, 0.9);
+
+// MIXINS
+// animation: balloon1 6s ease-in-out infinite;
+@mixin animation($name, $duration, $direction, $iteration) {
+	-moz-animation:$name $duration $direction $iteration;
+	-o-animation:$name $duration $direction $iteration;
+	animation:$name $duration $direction $iteration;
+}
+// @mixin egg($top, $bottom-l, $bottom-r) {
+// 	border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+// 	border-radius: $top $top $top $top  / $bottom-l $bottom-l $bottom-r $bottom-r;
+// }
+
+// .generate-balloons(@n, @i: 1) when (@i =< @n) {
+//   .balloon-@{i} {
+//     //width: (@i * 100% / @n);
+//     background-color: @i + red;
+//   }
+//   .generate-balloons(@n, (@i + 1));
+// }
+
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2013 Daniel Eden
+*/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    -ms-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+@-webkit-keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    /*-webkit-transform: translateX(2000px);
+    transform: translateX(2000px);*/
+    -webkit-transform: translateX(3000px);
+    transform: translateX(3000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    -ms-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.bounceInRight {
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+
+
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+
+$s-min: 20;
+$s-max: 100;
+$l-min: 30;
+$l-max: 90;
+
+@for $i from 1 through 6 {
+	.balloon-#{$i} {
+		background-color: hsla(random(360),$s-min+random($s-max+-$s-min),$l-min+random($l-max+-$l-min), 0.8);
+		-webkit-animation: balloon+$i random(6)+s ease-in-out infinite,
+						 balloon-rise random(6)+s linear 1;
+
+		&:after {
+			color: rgba(182, 15, 97, 0.8);
+			position: absolute;
+			top: -8px;
+			left: 42%;
+			content: "";
+			font-size: 1em;
+			background-color: inherit;
+			height: 16px;
+			width: 18px;
+			-webkit-transform: perspective(4px) rotateX(-10deg);
+		}
+	}
+}
+// .triangle {
+// 	height: 16px;
+// 	width: 18px;
+// 	-webkit-transform: perspective(4px) rotateX(10deg);
+// 	background: blue;
+// }
+.balloon-1 {
+	// margin-left: 90px;
+}
+.wrap-1 {
+	width: 122%;
+	margin-left: -71px;
+}
+.wrap-2 {
+	width: 90%;
+	margin: -25px auto 0;
+}
+.wrap-3 {
+	width: 125%;
+}
+
+// card
+.card {
+	width: 600px;
+	height: 400px;
+	margin: 50px auto;
+	background: #ccc;
+	overflow: hidden;
+	position: relative;
+
+	h1 {
+		text-align: center;
+		position: absolute;
+		top: 22%;
+		width: 100%;
+		z-index: 2;
+		font-size: 50px;
+	}
+}
+
+.animated.bounceInRight {
+	-webkit-animation-delay: .5s;
+}
+
+[class^="balloon-"] {
+	width:104px;
+	height:140px;
+	float: left;
+	//background: $burgundy;
+	// border-radius:80% 80% 80% 80%;
+	border-radius: 50%  / 60%   60%   40%  40%;
+	-webkit-transform: rotate(180deg);
+	padding:10px;
+	//box-shadow:inset 17px 7px 10px lighten($burgundy, 10%); 
+	// -webkit-transform-origin: bottom center; 
+	// -webkit-animation: balloon1 6s ease-in-out infinite,
+	// 					 balloon-rise 6s linear 1;
+	
+	&:before { 
+		// color: $burgundy;
+	}
+}
+
+
+@-webkit-keyframes balloon1 {
+	0% { 
+		-webkit-transform: translateY(0) rotate(180deg);
+	}
+	50% { 
+		-webkit-transform: translateY(-20px) rotate(188deg); 
+	}
+	100%{ 
+		-webkit-transform: translateY(0) rotate(180deg);
+	}
+}
+@-webkit-keyframes balloon2 {
+	0% { 
+		-webkit-transform:translateY(0) rotate(186deg);
+	}
+	50% { 
+		-webkit-transform:translateY(-30px) rotate(188deg);; 
+	}
+	100%{ 
+		-webkit-transform:translateY(0) rotate(186deg);
+	}
+}
+@-webkit-keyframes balloon3 {
+  0%,
+  100% {
+    -webkit-transform: translate(0, -10px) rotate(186eg);
+  }
+  50% {
+    -webkit-transform: translate(-10px, 20px) rotate(190deg);
+  }
+}
+@-webkit-keyframes balloon4 {
+	0% { 
+		-webkit-transform:translateY(10px, -10px) rotate(-195deg);
+	}
+	50% { 
+		-webkit-transform:translateY(-30px) rotate(-170deg);
+	}
+	100%{ 
+		-webkit-transform:translateY(10px, -10px) rotate(-195deg);
+	}
+}
+
+
+@-webkit-keyframes balloon-rise {
+	from {
+		margin-top: 400px;
+	}
+	to {
+		margin-top: 0;
+	}
+}
+
+
+
+
+
+
