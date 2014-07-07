@@ -2,7 +2,8 @@
 
     <main class="posts">
     	<article class="post-content">
-            <h3>{{ page.title }} - {{ page.date | date: "%b %-d, %Y" }}</h3>
+            <h3>{{ page.title }}</h3>
+            <h4>{{ page.date | date: "%b %-d, %Y" }}</h4>
 
     		{{ content }}
     	</article>

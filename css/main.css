@@ -1,12 +1,15 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300|Vollkorn");
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\000033}}
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\000039}}
 html {
   font-size: 62.5%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000312}}
 body {
   margin: 0;
   padding: 0;
@@ -15,9 +18,11 @@ body {
   background-size: cover;
   font-family: 'Vollkorn', serif; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000320}}
 header {
   padding: 20px 0 40px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000323}}
 h1 {
   font-size: 6rem;
   text-align: center;
@@ -25,43 +30,63 @@ h1 {
   text-transform: uppercase;
   line-height: 1; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000330}}
+h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000333}}
 h2 {
-  font-family: 'Open Sans', sans-serif;
   text-align: center;
   font-size: 2.0rem;
   margin: 0px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000338}}
 h3 {
-  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-size: 1.6rem;
   margin-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000343}}
   h3 a {
     text-decoration: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000347}}
 hr {
   border: none;
   border-top: 1px solid #333; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000351}}
 a {
   color: black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000354}}
   a:hover {
     color: cornflowerblue; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000358}}
 main {
   margin: 0 auto;
   width: 90%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000362}}
 p {
   font-size: 14px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000365}}
 .posts {
   max-width: 800px;
   background: rgba(230, 230, 250, 0.8);
   padding: 20px 30px;
   border-radius: 5px;
   min-height: 300px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000372}}
+  .posts h3 {
+    margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000375}}
+  .posts h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000381}}
 .grid-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -70,6 +95,7 @@ p {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000389}}
 .grid-cell {
   width: 24.25%;
   background: rgba(230, 230, 250, 0.8);
@@ -79,27 +105,34 @@ p {
   padding: 15px 20px 40px;
   line-height: 1.25;
   margin-right: 1%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\0000399}}
   .grid-cell:nth-child(4n+4) {
     margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003102}}
   .grid-cell img {
     max-width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003107}}
 .post-content img {
   max-width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003111}}
 .more {
   position: absolute;
   right: 20px;
   bottom: 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003117}}
 pre {
   background: #222;
   padding: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003121}}
   pre code {
     display: block;
     color: #ddd;
     overflow: auto; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003129}}
 footer {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -111,36 +144,49 @@ footer {
   padding: 10px 30px;
   border-radius: 5px;
   width: 90%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003142}}
   footer a {
     color: lavender; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003145}}
     footer a:hover {
       color: cornflowerblue; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003150}}
   main footer {
     max-width: 1200px; }
 
 @media (max-width: 1100px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003156}}
   .grid-cell {
     width: 32.666666667%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003159}}
     .grid-cell:nth-child(3n+3) {
       margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003162}}
     .grid-cell:nth-child(4n+4) {
       margin-right: 1%; } }
 @media (max-width: 850px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003168}}
   main footer {
     width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003171}}
   .grid-cell {
     width: 48%;
     margin-left: 1%;
     margin-right: 1%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003176}}
     .grid-cell:nth-child(3n+2) {
       margin-left: 1%;
       margin-right: 1%; } }
 @media (max-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003184}}
   .grid-cell {
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/css\/main\.scss}line{font-family:\00003189}}
     .grid-cell:nth-child(3n+2) {
       margin-left: 0;
       margin-right: 0; } }
+
+/*# sourceMappingURL=main.css.map */
