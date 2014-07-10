@@ -123,8 +123,8 @@ Copyright (c) 2013 Daniel Eden
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/projects\/day-16\.scss}line{font-family:\00003177}}
 .balloon-1 {
-  background-color: rgba(249, 144, 154, 0.8);
-  -webkit-animation: balloon1 2s ease-in-out infinite, balloon-rise 6s linear 1; }
+  background-color: rgba(100, 123, 227, 0.8);
+  -webkit-animation: balloon1 6s ease-in-out infinite, balloon-rise 3s linear 1; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/projects\/day-16\.scss}line{font-family:\00003182}}
   .balloon-1:after {
     color: rgba(182, 15, 97, 0.8);
@@ -140,8 +140,8 @@ Copyright (c) 2013 Daniel Eden
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/projects\/day-16\.scss}line{font-family:\00003177}}
 .balloon-2 {
-  background-color: rgba(186, 217, 175, 0.8);
-  -webkit-animation: balloon2 6s ease-in-out infinite, balloon-rise 1s linear 1; }
+  background-color: rgba(212, 242, 234, 0.8);
+  -webkit-animation: balloon2 2s ease-in-out infinite, balloon-rise 6s linear 1; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/projects\/day-16\.scss}line{font-family:\00003182}}
   .balloon-2:after {
     color: rgba(182, 15, 97, 0.8);
@@ -157,7 +157,7 @@ Copyright (c) 2013 Daniel Eden
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/projects\/day-16\.scss}line{font-family:\00003177}}
 .balloon-3 {
-  background-color: rgba(236, 65, 122, 0.8);
+  background-color: rgba(236, 183, 182, 0.8);
   -webkit-animation: balloon3 4s ease-in-out infinite, balloon-rise 1s linear 1; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/projects\/day-16\.scss}line{font-family:\00003182}}
   .balloon-3:after {
@@ -174,8 +174,8 @@ Copyright (c) 2013 Daniel Eden
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/projects\/day-16\.scss}line{font-family:\00003177}}
 .balloon-4 {
-  background-color: rgba(228, 151, 252, 0.8);
-  -webkit-animation: balloon4 2s ease-in-out infinite, balloon-rise 5s linear 1; }
+  background-color: rgba(123, 33, 192, 0.8);
+  -webkit-animation: balloon4 6s ease-in-out infinite, balloon-rise 4s linear 1; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/projects\/day-16\.scss}line{font-family:\00003182}}
   .balloon-4:after {
     color: rgba(182, 15, 97, 0.8);
@@ -191,8 +191,8 @@ Copyright (c) 2013 Daniel Eden
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/projects\/day-16\.scss}line{font-family:\00003177}}
 .balloon-5 {
-  background-color: rgba(182, 146, 99, 0.8);
-  -webkit-animation: balloon5 2s ease-in-out infinite, balloon-rise 2s linear 1; }
+  background-color: rgba(140, 213, 238, 0.8);
+  -webkit-animation: balloon5 4s ease-in-out infinite, balloon-rise 6s linear 1; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/projects\/day-16\.scss}line{font-family:\00003182}}
   .balloon-5:after {
     color: rgba(182, 15, 97, 0.8);
@@ -208,8 +208,8 @@ Copyright (c) 2013 Daniel Eden
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/projects\/day-16\.scss}line{font-family:\00003177}}
 .balloon-6 {
-  background-color: rgba(212, 78, 212, 0.8);
-  -webkit-animation: balloon6 6s ease-in-out infinite, balloon-rise 6s linear 1; }
+  background-color: rgba(235, 127, 129, 0.8);
+  -webkit-animation: balloon6 1s ease-in-out infinite, balloon-rise 6s linear 1; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christinatruong\/Dropbox\/Sites\/summer-of-me\/projects\/day-16\.scss}line{font-family:\00003182}}
   .balloon-6:after {
     color: rgba(182, 15, 97, 0.8);
