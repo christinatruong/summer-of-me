@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300|Vollkorn");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300|Vollkorn:400,700");
 
 *, *:before, *:after {
 	-moz-box-sizing: border-box;
@@ -24,20 +24,23 @@ body {
 	font-size: 1.6rem;
 	background: url(../img/DSC_0073-web.jpg) no-repeat fixed;
 	background-size: cover;
-	font-family: 'Vollkorn', serif;
+	/* font-family: 'Vollkorn', serif; */
+	font-family: 'Open Sans', sans-serif;
 }
 header {
 	padding: 20px 0 40px;
 }
 h1 {
 	font-size: 6rem;
+	font-weight: 400;
 	text-align: center;
 	margin-bottom: 0;
 	text-transform: uppercase;
 	line-height: 1;
+	font-family: 'Vollkorn', serif;
 }
 h2, h3, h4 {
-	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
 }
 h2 {
 	text-align: center;
@@ -51,6 +54,16 @@ h3 {
 
 	a {
 		text-decoration: none;
+	}
+}
+ul, ol {
+	padding: 0 18px;
+
+	li {
+		margin-bottom: 20px;
+	}
+	img {
+		margin-top: 10px;
 	}
 }
 hr {
@@ -68,9 +81,7 @@ main {
 	margin: 0 auto;
 	width: 90%;
 }
-p {
-	font-size: 14px;
-}
+
 .posts {
 	max-width: 800px;
 	background: rgba(lavender, 0.8);
@@ -111,6 +122,9 @@ p {
 	img {
 		max-width: 100%;
 	}
+	p {
+		font-size: 1.4rem;
+	}
 }
 .post-content {
 	img {
@@ -129,7 +143,7 @@ pre {
 
 	code {
 		display: block;
-		
+
 		color: #ddd;
 		overflow: auto;
 	}
@@ -164,7 +178,7 @@ footer {
 @media (max-width: 1100px) {
 	.grid-cell {
 		width: 32.666666667%;
-		
+
 		&:nth-child(3n+3) {
 			margin-right: 0;
 		}
