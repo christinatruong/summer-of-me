@@ -6,11 +6,13 @@
             <h4>{{ page.date | date: "%b %-d, %Y" }}</h4>
 
     		{{ content }}
+
+            &larr; <a href="/summer-of-me/">Home</a>
     	</article>
 
         <!-- <a href="{{ post.previous }}">Prev</a> || <a href="/summer-of-me/">Home</a> || <a href="{{ post.next }}">Next</a>  -->
 
-        &larr; <a href="/summer-of-me/">Home</a>
-    </main>
 
-{% include footer.html %}
+
+        {% include footer.html %}
+    </main>

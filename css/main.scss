@@ -1,6 +1,8 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300|Vollkorn:400,700");
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -8,13 +10,15 @@
 
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " ";
+  display: table;
 }
 .cf:after {
-    clear: both;
+  clear: both;
 }
 
+// GLOBAL STYLES
+//---------------
 html {
 	font-size: 62.5%;
 }
@@ -22,7 +26,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 1.6rem;
-	background: url(../img/DSC_0073-web.jpg) no-repeat fixed;
+	background: url(../img/me-distillery.jpg) no-repeat fixed bottom right;
 	background-size: cover;
 	/* font-family: 'Vollkorn', serif; */
 	font-family: 'Open Sans', sans-serif;
@@ -79,15 +83,28 @@ a {
 }
 main {
 	margin: 0 auto;
-	width: 90%;
+	width: 95%;
+}
+pre {
+	background: #222;
+	padding: 20px;
+
+	code {
+		display: block;
+
+		color: #ddd;
+		overflow: auto;
+	}
 }
 
+// BLOG LAYOUT
+//-------------
 .posts {
-	max-width: 800px;
-	background: rgba(lavender, 0.8);
+	max-width: 800px; 
+	/* background: rgba(lavender, 0.8);
 	padding: 20px 30px;
 	border-radius: 5px;
-	min-height: 300px;
+	min-height: 300px; */
 
 	h3 {
 		margin-bottom: 0;
@@ -98,6 +115,21 @@ main {
 		text-transform: uppercase;
 	}
 }
+.post-content {
+	max-width: 800px;
+	background: rgba(lavender, 0.8);
+	padding: 20px 30px;
+	border-radius: 5px;
+	min-height: 300px;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+
+// DEFAULT LAYOUT
+//----------------
 .grid-container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -126,41 +158,28 @@ main {
 		font-size: 1.4rem;
 	}
 }
-.post-content {
-	img {
-		max-width: 100%;
-	}
-}
+
+// HOMEPAGE
+//----------
 .more {
 	position: absolute;
 	right: 20px;
 	bottom: 15px;
 }
 
-pre {
-	background: #222;
-	padding: 20px;
 
-	code {
-		display: block;
-
-		color: #ddd;
-		overflow: auto;
-	}
-}
-
+// GLOBAL FOOTER
+//---------------
 footer {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	color: lavender;
-	margin-top: 20px;
 	background: rgba(black, 0.5);
-	max-width: 800px;
+	/* max-width: 800px; */
 	margin: 20px auto;
 	padding: 10px 30px;
 	border-radius: 5px;
-	width: 90%;
-
+	/* width: 98%; */
 
 	a {
 		color: lavender;
@@ -175,6 +194,9 @@ footer {
 	}
 }
 
+
+// MEDIA QUERIES
+//---------------
 @media (max-width: 1100px) {
 	.grid-cell {
 		width: 32.666666667%;
@@ -185,33 +207,37 @@ footer {
 		&:nth-child(4n+4) {
 			margin-right: 1%;
 		}
+		&:nth-child(12n+12) {
+			margin-right: 0;
+		}
 	}
 }
+
 @media (max-width: 850px) {
 	main footer {
-		width: 100%;
+		/* width: 100%; */
 	}
 	.grid-cell {
 		width: 48%;
-		margin-left: 1%;
-		margin-right: 1%;
+	/* 	margin-left: 1%;
+	margin-right: 1%; */
 
 		&:nth-child(3n+2) {
-			margin-left: 1%;
-			margin-right: 1%;
+			/* margin-left: 1%;
+			margin-right: 1%; */
 		}
 	}
 }
 
 @media (max-width: 600px) {
 	.grid-cell {
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
+		width: 98%;
+		/* margin-left: 0; */
+		/* margin-right: 0; */
 
 		&:nth-child(3n+2) {
-			margin-left: 0;
-			margin-right: 0;
+			/* margin-left: 0; */
+			/* margin-right: 0; */
 		}
 	}
 }
